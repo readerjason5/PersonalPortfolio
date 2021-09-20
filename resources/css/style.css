@@ -2,6 +2,7 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: #262223;
   }
   
   html,
@@ -18,7 +19,7 @@ html {
   
     --border-radius: 12px;
   
-    --font-color: #323232;
+    --font-color: #DDC6B6;
   }
 
 h2 {
@@ -60,6 +61,7 @@ nav {
     width: 300px;
     border-radius: var(--border-radius);
     flex-shrink: 0;
+    height: 450px;
   }
   
   .about-me-container {
@@ -119,10 +121,9 @@ nav {
     flex-wrap: wrap;
   }
   
-  #skills-container > * {
-    font-size: 2em;
-    width: 2em;
-    margin-top: var(--spacing-1);
+  #skills-container ul li{
+    font-size: 1.25em;
+    margin: 5px 0;
   }
 
   @media only screen and (max-width: 600px) {
