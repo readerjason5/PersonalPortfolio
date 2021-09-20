@@ -85,7 +85,48 @@ nav {
   summary {
     list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
   }
+
+  footer {
+    margin-top: auto;
+    padding: var(--spacing-2) 0;
+    text-align: center;
+  }
   
   section {
     padding: var(--spacing-3) 0;
+  }
+
+  .icon {
+    font-size: 2em;
+    color: var(--font-color);
+    margin: 0 var(--spacing-1);
+  }
+  
+  a {
+    color: var(--font-color);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  #logo {
+    margin: 0;
+  }
+  
+  #skills-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  #skills-container > * {
+    font-size: 2em;
+    width: 2em;
+    margin-top: var(--spacing-1);
+  }
+
+  @media only screen and (max-width: 600px) {
+    .about-me-container {
+      flex-direction: column;
+    }
   }
